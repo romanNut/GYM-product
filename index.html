@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym</title>
+    <link rel="stylesheet" href="./static/styles/style.css">
+</head>
+<body>
+    <button class="container-add--exercise">
+            <h2 class="add-exercise">Добавить упражнение</h2>
+    </button>
+    <!-- <container class="header">
+        <h2 class="main-data">Апрель 2024</h2>
+        <container class="data">
+            <h2>Пн</h2>
+            <h2>Вт</h2>
+            <h2>Ср</h2>
+            <h2>Чт</h2>
+            <h2>Пт</h2>
+            <h2>Сб</h2>
+            <h2>Вс</h2>
+        </container>
+        <container class="chislo">
+            <h2>22</h2>
+            <h2>23</h2>
+            <h2>24</h2>
+            <h2>25</h2>
+            <h2>26</h2>
+            <h2>27</h2>
+            <h2>28</h2>
+        </container> -->
+    <div class="calendar" id="calendar-app">
+        <div class="calendar--day-view" id="day-view">
+          <span class="day-view-exit" id="day-view-exit">&times;</span>
+          <span class="day-view-date" id="day-view-date">MAY 29 2016</span>
+          <div class="day-view-content">
+            <div class="day-highlight">
+            <span class="day-events" id="day-events"></span> &nbsp; <span tabindex="0" onkeyup="if(event.keyCode != 13) return; this.click();" class="day-events-link" id="add-event" data-date></span>
+            </div>
+            <div class="day-add-event" id="add-day-event-box" data-active="false">
+             <!-- форма добавления -->
+                <div class="row">
+                <div class="half">
+    
+                  <!-- <label class="add-event-label">
+                    <input type="text" class="add-event-edit add-event-edit--long" placeholder="New event" id="input-add-event-name"> -->
+    
+                  <!-- </label> -->
+                </div>
+                <div class="qtr">
+                    <!-- работа даты внизу для возвращения -->
+                  <label class="add-event-label">
+    
+                    <input type="text" class="add-event-edit" placeholder="8:15" id="input-add-event-start-time" data-options="1,2,3,4,5,6,7,8,9,10,11,12" data-format="datetime">
+                    <input type="text" class="add-event-edit" placeholder="am" id="input-add-event-start-ampm" data-options="a,p,am,pm">
+                  </label>
+    
+                </div>
+                <!-- конец -->
+                <div class="qtr">
+                  <label class="add-event-label">
+    
+                    <input  id="input-add-event-end-time" >
+                    <input  id="input-add-event-end-ampm" >
+                  </label>
+                </div>
+                <div class="half">
+                  <a onkeyup="if(event.keyCode != 13) return; this.click();" tabindex="0" id="add-event-save" class="">save</a>
+                  <a tabindex="0" id="add-event-cancel" class="">cancel</a>
+                </div>
+              </div>
+    
+            </div>
+            <div id="day-events-list" class="day-events-list">
+    
+            </div>
+            <div class="day-inspiration-quote" id="inspirational-quote">
+    
+            </div>
+          </div>
+        </div>
+        <div class="calendar--view" id="calendar-view">
+          <div class="cview__month">
+            <span class="cview__month-last" id="calendar-month-last">Apr</span>
+            <span class="cview__month-current" id="calendar-month">May</span>
+            <span class="cview__month-next" id="calendar-month-next">Jun</span>
+          </div>
+          <div class="cview__header">Пн</div>
+          <div class="cview__header">Вт</div>
+          <div class="cview__header">Ср</div>
+          <div class="cview__header">Чт</div>
+          <div class="cview__header">Пт</div>
+          <div class="cview__header">Сб</div>
+          <div class="cview__header">Вс</div>
+          <div class="calendar--view" id="dates">
+          </div>
+        </div>
+        <div class="footer">
+          <span><span id="footer-date"></span></span>
+        </div>
+      </div>
+    </container>
+    <script src="./app.js"></script>
+
+    
+<!-- список -->
+
+</body>
+</html>
